@@ -1,0 +1,56 @@
+Fri Nov 18 10:48:40 IST 2022
+MaxEnt version 3.4.4
+Checking header of D:\5th sem\CCI\Assign\Assignment 3\prec.asc
+Checking header of D:\5th sem\CCI\Assign\Assignment 3\tmax.asc
+Checking header of D:\5th sem\CCI\Assign\Assignment 3\tmin.asc
+Reading samples from Potato_Maxent.csv
+Read samples: max memory 4236247040, total allocated 266338304, free 229965352, used 36372952, increment 36372952
+Converting file D:\5th sem\CCI\Assign\Assignment 3\prec.asc size 73934, max memory = 4236247040
+Reading file prec.asc
+FLOAT, 2594 pixels with data
+readGrid: max memory 4236247040, total allocated 266338304, free 227017344, used 39320960, increment 2948008
+Writing file D:\5th sem\CCI\Assign\Assignment 3\maxent.cache\prec.mxe
+Converting file D:\5th sem\CCI\Assign\Assignment 3\tmax.asc size 77895, max memory = 4236247040
+Reading file tmax.asc
+FLOAT, 2594 pixels with data
+readGrid: max memory 4236247040, total allocated 266338304, free 252836192, used 13502112, increment -25818848
+Writing file D:\5th sem\CCI\Assign\Assignment 3\maxent.cache\tmax.mxe
+Converting file D:\5th sem\CCI\Assign\Assignment 3\tmin.asc size 78760, max memory = 4236247040
+Reading file tmin.asc
+FLOAT, 2594 pixels with data
+readGrid: max memory 4236247040, total allocated 266338304, free 249677344, used 16660960, increment 3158848
+Writing file D:\5th sem\CCI\Assign\Assignment 3\maxent.cache\tmin.mxe
+Extractor: max memory 4236247040, total allocated 266338304, free 249677344, used 16660960, increment 0
+Extracting random background and sample data
+Warning: Sample at 91.1761, 26.6829 in Potato_Maxent.csv is missing some environmental data (e.g. prec)
+Warning: Skipping sample at 91.1761, 26.6829 which has no environmental data
+Time since start: 3.483
+2594 points with values for all grids
+Adding samples to background in feature space
+Command line used: 
+Command line to repeat: java density.MaxEnt nowarnings noprefixes "outputdirectory=D:\5th sem\CCI\Assign\Assignment 3\OUTPUT" "samplesfile=D:\5th sem\CCI\Assign\Assignment 3\Potato_Maxent.csv" "environmentallayers=D:\5th sem\CCI\Assign\Assignment 3"
+Species: Potato
+Layers: prec tmax tmin
+Layertypes: Continuous Continuous Continuous
+outputdirectory: D:\5th sem\CCI\Assign\Assignment 3\OUTPUT
+samplesfile: D:\5th sem\CCI\Assign\Assignment 3\Potato_Maxent.csv
+environmentallayers: D:\5th sem\CCI\Assign\Assignment 3
+
+getSamples: max memory 4236247040, total allocated 266338304, free 246531608, used 19806696, increment 3145736
+Making features
+makeFeatures: max memory 4236247040, total allocated 266338304, free 246531608, used 19806696, increment 0
+Potato: 
+Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
+117 samples
+Density: max memory 4236247040, total allocated 266338304, free 244813872, used 21524432, increment 1717736
+linearPredictor: max memory 4236247040, total allocated 266338304, free 244813872, used 21524432, increment 0
+FeaturedSpace: max memory 4236247040, total allocated 266338304, free 244813872, used 21524432, increment 0
+Sequential: max memory 4236247040, total allocated 266338304, free 244813872, used 21524432, increment 0
+Initial loss: 7.860956364876389
+400: time = 0.518000 loss = 7.509815
+Resulting gain: 0.35114103952991993
+Time since start: 4.917
+Projecting...
+Writing file D:\5th sem\CCI\Assign\Assignment 3\OUTPUT\Potato.asc
+Writing D:\5th sem\CCI\Assign\Assignment 3\OUTPUT\plots\Potato.png
+Ending

@@ -1,0 +1,22 @@
+Naive Bayes
+Decision tree
+SVM
+Random Forest
+
+
+RF > DT > SVM
+
+RF
+DT
+SVM
+
+
+training_data = training_data[['google_index', 'page_rank', 'nb_hyperlinks', 'web_traffic', 'domain_age', 'nb_www', 'safe_anchor', 'length_url', 'ratio_digits_url', 'shortest_word_host', 'domain_registration_length', 'longest_words_raw', 'phish_hints', 'length_hostname', 'char_repeat', 'shortest_word_path', 'nb_slash', 'domain_in_title', 'shortest_words_raw', 'nb_dots', 'ratio_digits_host', 'longest_word_host', 'nb_hyphens', 'ip', 'nb_qm', 'nb_subdomains', 'domain_with_copyright', 'nb_redirection', 'domain_in_brand', 'https_token', 'nb_underscore', 'prefix_suffix', 'shortening_service', 'nb_and', 'nb_com', 'nb_percent', 'suspecious_tld', 'whois_registered_domain', 'random_domain', 'statistical_report', 'tld_in_subdomain', 'dns_record', 'nb_space', 'tld_in_path', 'nb_at', 'nb_colon', 'http_in_path', 'nb_semicolumn', 'nb_dslash', 'nb_tilde', 'brand_in_path', 'port', 'brand_in_subdomain', 'nb_comma', 'nb_external_redirection', 'path_extension', 'punycode', 'nb_dollar', 'nb_star', 'nb_or', 'status']]
+
+
+
+training_data = training_data[['google_index', 'page_rank', 'nb_hyperlinks', 'web_traffic', 'domain_age', 'nb_www', 'safe_anchor', 'length_url', 'ratio_digits_url', 'shortest_word_host', 'domain_registration_length', 'longest_words_raw', 'phish_hints', 'length_hostname', 'char_repeat', 'shortest_word_path', 'nb_slash', 'domain_in_title', 'shortest_words_raw', 'nb_dots', 'ratio_digits_host', 'longest_word_host', 'nb_hyphens', 'ip', 'nb_qm', 'nb_subdomains', 'domain_with_copyright', 'nb_redirection', 'domain_in_brand', 'https_token', 'nb_underscore', 'prefix_suffix', 'shortening_service', 'nb_and', 'nb_com', 'nb_percent', 'suspecious_tld', 'whois_registered_domain', 'random_domain', 'statistical_report', 'tld_in_subdomain', 'dns_record', 'nb_space', 'tld_in_path', 'nb_at', 'nb_colon', 'http_in_path', 'nb_semicolumn', 'nb_dslash', 'nb_tilde', 'brand_in_path', 'port', 'brand_in_subdomain', 'nb_comma', 'nb_external_redirection', 'path_extension', 'punycode', 'status']]
+
+
+testing_data = testing_data[['google_index', 'page_rank', 'nb_hyperlinks', 'web_traffic', 'domain_age', 'nb_www', 'safe_anchor', 'length_url', 'ratio_digits_url', 'shortest_word_host', 'domain_registration_length', 'longest_words_raw', 'phish_hints', 'length_hostname', 'char_repeat', 'shortest_word_path', 'nb_slash', 'domain_in_title', 'shortest_words_raw', 'nb_dots', 'ratio_digits_host', 'longest_word_host', 'nb_hyphens', 'ip', 'nb_qm', 'nb_subdomains', 'domain_with_copyright', 'nb_redirection', 'domain_in_brand', 'https_token', 'nb_underscore', 'prefix_suffix', 'shortening_service', 'nb_and', 'nb_com', 'nb_percent', 'suspecious_tld', 'whois_registered_domain', 'random_domain', 'statistical_report', 'tld_in_subdomain', 'dns_record', 'nb_space', 'tld_in_path', 'nb_at', 'nb_colon', 'http_in_path', 'nb_semicolumn', 'nb_dslash', 'nb_tilde', 'brand_in_path', 'port', 'brand_in_subdomain', 'nb_comma', 'nb_external_redirection', 'path_extension', 'punycode', 'nb_dollar', 'nb_star', 'nb_or', 'status']]
+

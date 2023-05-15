@@ -1,0 +1,29 @@
+Just Download the zip Folder.
+Extract the zip Folder.
+Open the Folder in VS Code.
+
+Note:
+    Install Modules using npm install.
+    Modules are not included in the zip folder due to huge size.
+
+Run Using the Command -> npm start
+
+Form:
+1. App
+2. Registration
+3. RegistrationForm
+
+In src folder : App.js is present which is the main file.
+and In components folder : Registration.js and RegistrationForm.js are present.
+
+Created 2 components Registration and RegistrationForm
+
+Data is stored in RegistrationForm
+and is passed to Registration
+and then passed to App.js
+
+The data is passed from RegistrationForm to Registration and then to App.js using props.
+
+In App.js
+using console log the data to see the output.
+      

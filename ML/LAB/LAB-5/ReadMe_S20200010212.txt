@@ -1,0 +1,54 @@
+ML Lab-5:
+
+Submitted one file (I implemented Discretize, without Discretize):
+
+	Note: Discretize is Not asked in question but i implemented for checking how the accuracy is changing.
+
+	Discretize: Rounding the value done by two functions
+		1) discretize_str_float, 2) discretize_str_int (39-52 line in code file).
+
+
+a. Split the data into 70:30 (train/test).
+	Splitted the data into 70:30 ratio.
+	0.7 Ratio.
+	Total data --> 1025 lines.
+	Nearly 717 training set and 308 test set.
+
+b. Use Naive Bayes classifier to perform classification and report the accuracy.
+Consider continuous values associated with a feature are assumed to be distributed according to a Gaussian distribution (Normal distribution) and estimate the posterior probability from Gaussian PDF.
+
+	Naive Bayes classifier is used to perform the calssification.
+	The fundamental Naive Bayes assumption classes are independent.
+	and coded the logic explained in the class.
+
+	
+	Considering continuous values associated with a feature and used Gaussian distribution (Normal distribution)
+	The Formula for Gaussian Distribution :
+		(1/root(2*pi)*std_dev) * e^(-1/2 * ((present value - mean)/std_dev)^2)
+	This formula is used in the code (Line 140-147) and by calculating mean and standard deviation (In line 116-124).
+
+	Without using numpy i calculated mean and standard accuracy.
+	
+	Calculated Posterior probability from Gaussian and Measured the Accuracy using gaussian formula.
+
+
+Mean, std, max and min created my own functions.
+
+		
+
+RESULT:
+Final Output:
+Note : since i'm using random values we get random accuracy when we run the code at different time.
+	so, run 5-6 times and we can verify it.
+
+Accuracy with Discretization: 83.5777 %
+Accuracy with-out Discretization: 83.1867 %
+
+
+
+
+
+
+
+
+ 

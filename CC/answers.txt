@@ -1,0 +1,55 @@
+Managing the block
+health of data node.
+
+
+
+
+
+
+
+CP
+Distribution tolerance
+by default P
+why C but not A.
+How MongoDB is designed.
+
+A ==> Yes, but loose the consistency.
+
+
+-----------------------------------------
+
+Distribution
+
+Collection Scan.
+
+-----------------------------------------
+
+64 MB
+
+it is quitely large or small.
+chunks are communication over the newtowork
+so large bunch of data transimitting is large
+
+reducing number of mistakes.
+
+-----------------------------------------
+
+Single , Multiple
+
+-----------------------------------------
+
+Garbage collections
+gfs
+every file system has some garbage collections.
+
+-----------------------------------------
+
+a, b, d
+a --> log
+
+-----------------------------------------
+
+Map Reduce 
+
+-----------------------------------------
+

@@ -1,0 +1,58 @@
+ML Lab-6:
+
+Submitted one file by calculating the values for Bias and Variance
+
+0. Do Bias Variance Analysis for the following.
+
+Bias Varainace Analysis by calculating the values for Bias and Variance by using some classifier as per given in the pdf.
+
+
+1. Use the classifier 1-Nearest neighbour classifier
+
+Using KNN and taking Value K = 1, calculating ym and y*
+Main prediction and Bayes Prediction.
+
+
+2. Let there are two classes whose apriori probabilities are equal.
+
+Two Classes are taken class - 1 and class - 2 and generated random values using numpy functions
+Taken N = 10 and n  from 100 to 1000. For simplicity let taken values 100, 200, ...,1000.
+Line(86-96) in code
+
+3. Class 1 is drawn from the normal distribution with mean (0,0) and covariance matrix I (ie., the identity matrix of size 2x2).
+
+Mean value taken as (0, 0) and covaraince matrix as [[1,0], [0,1]]
+and generated values for class - 1
+Line (40-52) generating values from mean and covariance
+
+4. Class 2 is also drawn from the normal distribution with mean (0,2) and covariance matrix I (ie., the identity matrix of size 2x2).
+
+Mean value taken as (0, 2) and covaraince matrix as [[1,0], [0,1]]
+and generated values for class - 2
+Line (40-52) generating values from mean and covariance
+
+ym --> main Prediction.
+y*--> Bayes Prediction.
+
+ 
+Result and Observation:
+
+
+Note: It takes nearly 2 minutes to run all data because we are taking a bit huge data.
+
+Variance Values:
+[0.36700000000000005, 0.2910000000000002, 0.33799999999999986, 0.352, 0.3320000000000002, 0.31800000000000006, 0.31400000000000006, 0.35500000000000015, 0.32600000000000007, 0.3230000000000001]
+
+Bias Values:
+[0.61, 0.69, 0.65, 0.63, 0.65, 0.67, 0.67, 0.64, 0.67, 0.68]
+
+Observation:
+Bias Values are more than the variance values for each n.
+and the overall change for bias and varaince for each n is nearly same.
+
+
+Result:
+Bias Values are more than the variance values for each n.
+Values are symmetric for the line y = 0.485 for each values
+Values are symmetic for some y axis.
+

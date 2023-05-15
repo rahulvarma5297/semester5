@@ -1,0 +1,70 @@
+ML Lab-7:
+
+
+1. Divide the data into train-test split of 70:30.
+
+	As discussed in class to take first 70% as train case and next 30% as test case.
+	Train set -> 354
+	Test Set -> 152
+	Implemented in line (7-14)
+
+2. Implement the Linear Regression Model to Predict the Median House Price value in Lakhs.
+
+	12 Features are given and 1 last value is price(which is like a class).
+	Let alpha value is  0.000011
+	and used uniform distribution.
+
+
+3. Implement the Gradient Descent with SSE to Optimize the model for up to 100 iteration and predict the test set.
+
+	For 100 iterations: the θ is calculated:
+	using θ = θ - α * partial derivative of(J(θ) / θ).
+	and stored in data.
+	Implemented in the line (30 - 33) in for loop.
+
+	
+4. Print the Coefficients of the Optimized model.
+
+	Coefficients for those 12 features are stored in data and printed.
+	Implemented in the line (36-39)
+
+5. Print the SSE, MSE and R2 scores for the Train and Test Sets.
+
+	Using the Formulas as explained in the lab.
+	SSE, MSE, R2 is calcuated for Testing set and training set. 
+	and printed
+	Implemented in the line (56-65).
+
+
+
+Result and Observation:
+
+Note:
+Since used the radom variable for uniform distribution by running code for 5-6 times i got this as teh best result.
+
+
+The Coefficients of the Optimized model for each features are:
+0.12302187
+0.06078702
+0.45462113
+0.42907774
+0.51084262
+0.06789016
+0.21557269
+0.26188444
+0.31260892
+0.60431243
+-0.06856273
+0.78700299
+
+SSE Score for Training Set: 49622.76089021
+SSE Score for Testing  Set: 15358.90368213
+
+MSE Score for Training Set: 140.17729065
+MSE Score for Testing  Set: 101.71459392
+
+R2 Score for Training Set: -0.97109179
+R2 Score for Testing  Set: -0.52336292
+
+
+

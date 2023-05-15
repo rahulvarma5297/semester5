@@ -1,0 +1,165 @@
+1)
+Implement k-Nearest Neighbor Classifier over the Iris Data
+1. Implement 1-NNC
+2. Implement 3-NNC
+3. Divide the data into the training data and the test data (randomly divide the data in to 120 training examples and 30 test examples)
+4. Report accuracy of the 1-NNC, and k-NNC over the test data.
+
+(Submit your code files, your text files (for classification accuracy reporting). Also you can submit a "readme" file where you can describe about your submission).
+
+
+
+2)
+1. Implement 5-Fold Cross Validation (5M) 
+2. Perform 5-Fold cross validation on KNN Classifier (which you have implemented on Lab1) for IRIS Dataset (2M)
+3. Find out the best K value for the KNN Classifier using step-2. (2M)
+4. Report the validation accuracy and test accuracy of the classifier.  {Note, validation accuracy will have standard deviation, report that too}(1M)
+
+
+
+
+3)
+1. Use the OCR dataset provided in the following link:
+https://sites.google.com/site/viswanathpulabaigari/data-sets. 
+2. Find Best K for KNN using 3-fold Cross validation [5 Marks]
+3. Find Minkowski metric (p)  for test-set using Best K-NN classifier.  [5 Marks]
+Note: Do not use any APIs for KNN,  Cross Validation
+
+Datasets : pp_tra.dat is the training set; pp_tes.dat is the test set
+It is 192 dimensional data points; in each row the 193rd entry is the class-label.
+There are 6670 training examples and 3333 test examples.
+
+Find best k from {1, 2, ... 20} and best p from {1,2,3,4}
+
+
+
+
+4)
+0.  Use the Iris data which was divided in to training (with 120 training examples) and test data (with 30 test examples) as created in previous assignments.
+1. Discretize the data by rounding each feature value to its closest integer (1 Marks)
+2. Employ Naive Bayes Classifier and thus give your observation and results (3 Marks).
+3. If the data is used without discretization, then what is the performance of the Naive Bayes classifier. Give your observation, result (2 Marks)
+4. Use the OCR data given in the previous assignment and employ the Naive Bayes Classifier (4 Marks)
+
+Submit as usual your code, results, observations, readme.
+
+{Note, The Naive Bayes classifier assumes that the features for a given class are independent. That is, for the given class, features are independent. It is not other way round, that is, it is not that features are independent)
+
+
+
+
+
+5)
+Use the heart disease dataset provided, this data set contains 14 attributes, including the predicted attribute (Listed below).  
+
+
+1. age (continuous)
+2. sex (Categorical)
+3. chest pain type (4 values) (Categorical )
+4. resting blood pressure (continuous)
+5. serum cholestoral in mg/dl (continuous)
+6. fasting blood sugar > 120 mg/dl (Categorical)
+7. resting electrocardiographic results (Categorical: with values 0,1,2)
+8. maximum heart rate achieved (continuous)
+9. exercise induced angina (Categorical)
+10.oldpeak = ST depression induced by exercise relative to rest (continuous)
+11. the slope of the peak exercise ST segment  (Categorical)
+12. number of major vessels (0-3) colored by flourosopy (Categorical)
+13. thal: 0 = normal; 1 = fixed defect; 2 = reversable defect (Categorical)
+
+14. Target: Refers Heart disease in Patient (It is integer valued 0 = no disease and 1 = disease.)
+
+a. Split the data into 70:30 (train/test).
+
+b. Use Naive Bayes classifier to perform classification and report the accuracy.
+Consider continuous values associated with a feature are assumed to be distributed according to a Gaussian distribution (Normal distribution) and estimate the posterior probability from Gaussian PDF.
+
+Note: You may use basic NumPy functions like mean, std, max and min.
+However, you’re not allowed to use any built-in classification models from skit-learn.
+
+
+
+
+6)
+0. Do Bias Variance Analysis for the following.
+1. Use the classifier 1-Nearest neighbour classifier
+2. Let there are two classes whose apriori probabilities are equal.
+3. Class 1 is drawn from the normal distribution with mean (0,0) and covariance matrix I (ie., the identity matrix of size 2x2).
+4. Class 2 is also drawn from the normal distribution with mean (0,2) and covariance matrix I (ie., the identity matrix of size 2x2).
+5. Follow the slides uploaded in to this classroom related to this problem and do what is being asked.
+
+
+
+
+
+
+
+7)
+Use the house price dataset provided and perform the following tasks:
+1. Divide the data into train-test split of 70:30.
+2. Implement the Linear Regression Model to Predict the Median House Price value in Lakhs.
+3. Implement the Gradient Descent with SSE to Optimize the model for up to 100 iteration and predict the test set.
+4. Print the Coefficients of the Optimized model.
+5. Print the SSE, MSE and R2 scores for the Train and Test Sets.
+
+
+
+
+8)
+0. We assume that the correct relationship between the dependent and independent variables is t = 4+x1+3x2
+1. Generate data where  x1 is uniformly distributed in (1,10); and x2 is also uniformly distributed in (2, 5).
+2. Add noise epsilon to the target where epsilon is drawn from the normal distribution with 0 mean and 0.25 variance.
+3. Generate 10 different training sets each of size n. Training set size n should be varied from 100 to 1000 examples (you can say n is 100, 200, ..., 1000) and do the linear regression.
+4. Generate test set of size 100 do the bias variance analysis. Note that this test set is fixed.
+
+
+
+
+
+
+9)
+0. Linear regression can be used to create a linear classifier. For binary (2 class classification) classification we can say that the value of one class is -1 and that of the other is +1 and learn the linear regression.  For a 2D problem, let the solution be y = w0+w1x1+w2x2.
+Now, w0+w1x1+w2x2  = 0 is the discriminant. Moreover, w0+w1x1+w2x2  < 0 we say the class is -1, otherwise we say the class is +1.
+1. Create a 2D data of size 100, where 50 belongs to class -1 and 50 belongs to class +1.    Both these are drawn from Gaussians. Class -1 is drawn from Gaussian of mean (0,0) and covariance I (identity matrix of size 2x2). For class +1, the mean is (4,5) and the covariance is I. 
+2. In a similar way create a test set of size 50. where 25 are for one class, and others are for the other.
+3. Build the linear classifier (i.e., the linear regression using the error SSE or MSE; that is, you will find w0, w1, and w2) using the gradient descent method.  {use appropriate learning rate}
+4. Show the results along with the test error.
+5. Draw the classifier (that is, the line w0+w1x1+w2x2 = 0) in the 2D space along with training points. Points of different classes can be colored differently.
+
+
+
+
+10)
+1. Define input array X with angles from 60 deg to 300 deg converted in radians.
+2. Compute Y as Y=Sin(X)+K
+where K is a random number generated from normal distribution with zero mean and 0.15 std dev. 
+3. Create Linear Regression model, and different Non-Linear Regression models of 3,6,9,12 and 15th degree polynomial on data created in step-1 and step-2. (You may optimize the model for max. of 100 iterations using Gradient Descent)
+4. Plot the created models for the power of 1, 3,6,9,12 and 15, and print the SSE, Coefficients for the plotted models.
+5. Add the L1 and L2 regularization to the nonlinear regression model with 15th degree polynomial created in Step 3. (Optimize for Max. of 100 Iterations and lambda values [1e-10,1e-8,1e-4,1e-2,1,10,20])
+6. Plot the Lasso (L1) and Ridge (L2) regression models for lambda values [1e-10,1e-8,1e-4,1e-2,1,10,20], and print the SSE, Coefficients for the plotted models.
+
+
+
+
+
+11)
+Use the SVM Data provided in the attached Excel Sheet.
+1. Plot the Data Using Scatter Plot with appropriate colorings for each class [2 Marks]
+2. Create SVM model for the given data. (You may use built-in library and choose appropriate kernel and misclassification penalty (C)) [2 Marks]
+3. Plot the Data and SVM decision boundary along with the margins and support vectors. [3 Marks]
+4. Predict the label for data points below and plot them as well with data, decision boundary and support vectors. [3 Marks]
+a. [8 15]
+b. [7 4]
+
+
+
+
+
+12)
+Use MNIST Dataset for classification using Multi-Layer Neural Network.
+
+
+1) Identify the proper-hyper-parameters of the network through train and validation and mention them in the text cell.
+2) Identify the proper learning rate for the model and show the example graph of LR vs epochs for 5 different learning rates (you can define the range) for 20 epochs. (You need to plot 5 different loss vs epoch (train and validation) curves)
+
+Note use Train-Test split of 80% and 20%. Validation split 20%.

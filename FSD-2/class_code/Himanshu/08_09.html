@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <p id="fsd"></p> -->
+
+    <div id="fsd">
+        <button type="button" onclick="func()">DISPLAY</button>
+    </div>
+</body>
+<script>
+    function func(){
+        const fxml = new XMLHttpRequest();
+        fxml.onload = function(){
+            const xmld = this.responseXML;
+            const x = xmld.getElementsByTagName("Name");
+            let vtxt = "";
+            for(i = 0; i < x.length; i++){
+                vtxt += x[i].childNodes[0].nodeValue + "<br>";
+            }
+            document.getElementById('fsd').innerHTML = vtxt;
+        }
+        fxml.open("GET", "a.xml");
+        fxml.send();
+    }
+    
+</script>
+</html>

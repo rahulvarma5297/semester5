@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation (S20200010212)</title>
+    <script src="server.js"></script>
+</head>
+
+<body>
+    <h1>Form Validation</h1>
+    <form name="studentinfo" action="result.html" onsubmit="return check()" method="GET">
+        <label for="text">projectject Name</label>
+        <input type="text" id="project" name="project" required>
+        <br>
+        <label for="text">groupnum No</label>
+        <input type="text" id="groupnum" name="groupnum" required>
+        <br>
+        <label for="text">Email</label>
+        <input type="text" id="email" name="email" required>
+        <br>
+        <label for="text">Phone Number</label>
+        <input type="text" id="phone" name="phone" required>
+        <br>
+        <label for="text">Roll Number</label>
+        <input type="text" id="roll" name="roll" required>
+        <br>
+        <input type="submit" value="submit">
+
+    </form>
+</body>
+
+</html>
+
+
+<section class="form" id="form">
+
+    <h1 style="font-size:30px;font-family: courier;color: rgb(19, 15, 238);">Form for filling Details:</h1>
+    <br>
+    <h1 style="font-size:20px;font-family: courier;color: rgb(19, 15, 238);">Please enter details in small case letters and as given in placeholder:</h1>
+    <br>
+    <div class="form-container">
+
+      <form action="/" method="post" >
+
+        <label for="gender">GENDER:</label>
+        <input type="text" class="box" id="gender" name="gender" placeholder="Enter Your Gender, ie.. female/male/transgender" required><br>
+
+        <label for="age">AGE:</label>
+        <input type="text" class="box" id="age" name="age" placeholder="Enter Your Age" required><br>
+
+        <label for="junk">How often do you eat junk food at your home or your workplace ? :</label>
+        <input type="text" class="box" id="junk" name="junk" placeholder=" ie.. once every week / twice every week" required><br>
+
+        <label for="fruits">How often you eat fruits and salad ?:</label>
+        <input type="text" class="box" id="fruits" name="fruits" placeholder="ie.. atleast once everyday" required><br>
+
+        <label for="obesity">Are you aware that genes play a role in Obesity ?: </label>
+        <input type="text" class="box" id="obesity" name="obesity" placeholder="yes or no" required><br>
+
+        <label for="medical">Specify the medical conditions you have been diagnosed with, if any ?: </label>
+        <input type="text" class="box" id="medical" name="medical" placeholder="diabetes/hypothyroidism/pcod" required><br><br>
+
+        <p> <input type="submit" class="btn" name="submit" style="width: 15%;" value="submit" onclick="vadliate()"></p>
+        <p> <input type="reset" class="btn" style="width: 15%;" value="clear"> </p>
+
+      </form>
+    </div>
+

@@ -1,0 +1,23 @@
+Identify the climate change in your location by analyzing the climatic parameters (temperature, precipitation and solar radiation) from the historical data.
+Download the data from 1990 to 2020 from NASA Power data (https://power.larc.nasa.gov/data-access-viewer/)
+
+temparature
+precipitation --> Rain Fall.
+Solar Radiation.
+
+
+
+Temperature:
+Trend Line
+
+
+
+in 1990 --
+*in 1995 dropped to 
+
+Its like fluctuating from one year to another --> climate variability(year to year fluctuation)
+
+Linear Trend Line pointing upward
+included in the graph
+
+Trend exist in the data --> climate change

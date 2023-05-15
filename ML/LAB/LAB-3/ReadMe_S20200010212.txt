@@ -1,0 +1,83 @@
+ML Lab-3:
+
+Submitted one file (I did for K-Fold Cross Validation and K-NNC):
+	so by changing K value in the code at the line(129) we can get:
+		K = 3 --> (3-Fold cross validation);
+		We should do for (1-20 K-NNC)
+		I'm doing this in (131-138 line)
+		Calculating for each K - value and finding the maximum K value
+
+
+1) Use the OCR dataset provided in the following link:
+ 	I took data from pp_tra.dat and pp_tes.dat
+	It is 192 dimensional data points; in each row the 193rd entry is the class-label.
+	There are 6670 training examples and 3333 test examples.
+	as per given in the classroom
+
+2) Find Best K for KNN using 3-fold Cross validation [5 Marks]:
+ 	Setted value K = 3 (in line 129) for 3-fold cross validation
+	For finding the best value of K in K-NNC 
+	We should run for all K and get the highest value.(131-138 line in code).
+	and find the best value and stored in best variable (142-149 line in code).
+
+3)  Find Minkowski metric (p)  for test-set using Best K-NN classifier.  [5 Marks]:
+	We get the best value for K.
+	Last time we did for euclidean_distance.
+	now we should use Minkowski metric
+
+	we can give p = 1,2,3,4.(power)
+	Modified Appropriately:
+	def euclidean_distance(p1, p2, power):
+		d = 0.0
+		for x in range(len(p1)-1):
+			d += (abs(p1[x] - p2[x]))**power
+		return d**(1/power)
+
+	and find the maximum value obtaining.(151-166 line).
+	
+Finally output the best value of P.
+
+Since in 3-fold Cross validation we take folds-randomly, 
+we get different value's when we run each time.
+
+
+NOTE:
+	One output is also submitted as png file.
+	we get different value for each run because of random folds in cross validation.
+	
+	Since the data is too large and we are not using any API's 
+	It took nearly 6 hrs for the output.
+
+
+Accuracy for 1 - KNN: 79.55555555555556 %
+Accuracy for 2 - KNN: 75.55555555555556 %
+Accuracy for 3 - KNN: 78.66666666666666 %
+Accuracy for 4 - KNN: 77.33333333333333 %
+Accuracy for 5 - KNN: 80.44444444444444 %
+Accuracy for 6 - KNN: 78.0 %
+Accuracy for 7 - KNN: 77.55555555555556 %
+Accuracy for 8 - KNN: 76.88888888888889 %
+Accuracy for 9 - KNN: 78.0 %
+Accuracy for 10 - KNN: 75.55555555555554 %
+Accuracy for 11 - KNN: 72.44444444444446 %
+Accuracy for 12 - KNN: 74.44444444444444 %
+Accuracy for 13 - KNN: 76.44444444444444 %
+Accuracy for 14 - KNN: 72.44444444444444 %
+Accuracy for 15 - KNN: 73.77777777777777 %
+Accuracy for 16 - KNN: 72.22222222222223 %
+Accuracy for 17 - KNN: 70.44444444444444 %
+Accuracy for 18 - KNN: 71.11111111111111 %
+Accuracy for 19 - KNN: 70.22222222222223 %
+Accuracy for 20 - KNN: 71.55555555555556 %
+
+The Best Value of K in KNN is:  5
+
+Accuracy for Minkowski metric (p) =  1 is: 76.22222222222223  %
+Accuracy for Minkowski metric (p) =  2 is: 78.0  %
+Accuracy for Minkowski metric (p) =  3 is: 78.66666666666667  %
+Accuracy for Minkowski metric (p) =  4 is: 76.22222222222223  %
+
+The Best Value of Minkowski metric (p) is:  3
+
+
+ 

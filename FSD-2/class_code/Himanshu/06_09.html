@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Welcome to FSD - 2</p>
+    <div id="fsd">
+        <button type="button" onclick="ffsd()">DISPLAY</button>
+    </div>
+</body>
+
+<script>
+    function ffsd(){
+        const ajfsd = new XMLHttpRequest();
+        ajfsd.onload = function(){
+            document.getElementById('fsd').innerHTML = "FSD 2 is the part of FSD Track";
+        }
+        ajfsd.open("GET", "2.txt");
+        ajfsd.send();
+    }
+</script>
+</html>
+
+<!-- ajfsd.onreadystatechange = function(){
+    
+} -->

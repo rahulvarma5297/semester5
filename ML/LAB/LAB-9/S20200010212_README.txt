@@ -1,0 +1,39 @@
+ML Lab-9:
+
+
+1. Create a 2D data of size 100, where 50 belongs to class -1 and 50 belongs to class +1.    Both these are drawn from Gaussians. Class -1 is drawn from Gaussian of mean (0,0) and covariance I (identity matrix of size 2x2). For class +1, the mean is (4,5) and the covariance is I. 
+
+Train data is generated usihng np.random multi varaiate
+stored in train_data and test_data.
+coded this logic in line (82-96)
+
+
+2. In a similar way create a test set of size 50. where 25 are for one class, and others are for the other.
+
+In the same way created for test data also
+coded this logic in line (97-108)
+
+3. Build the linear classifier (i.e., the linear regression using the error SSE or MSE; that is, you will find w0, w1, and w2) using the gradient descent method.  {use appropriate learning rate}
+
+gradient descent logic is  coded in line (21-32)
+
+4. Show the results along with the test error.
+
+Results are printed in the output terminal and graphs are plotted
+
+5. Draw the classifier (that is, the line w0+w1x1+w2x2 = 0) in the 2D space along with training points. Points of different classes can be colored differently.
+
+Finally the output also Plotted.
+
+
+
+Result and Observation:
+
+Train data is Plotted using graph
+Final Output also plotted along with training points. Points of different classes.
+
+Error on test set is:  0.0
+Accuracy for the Training data is:  100.0
+Accuracy for the Test data is:  100.0
+
+

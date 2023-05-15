@@ -1,0 +1,86 @@
+ML Lab-4:
+
+Submitted one file (I implemented Discretize, without Discretize, and OCR data in same file):
+	
+	Discretize: Rounding the value done by two functions
+		1) discretize_str_float, 2) discretize_str_int (21-35 line in code file).
+	
+	With out Discretize : simply using the given data.
+	OCR data given in last assignment.
+		
+
+
+0)  Use the Iris data which was divided in to training (with 120 training examples) and test data (with 30 test examples) as created in previous assignments.
+
+	In line 179 => division_parts = 5
+	this divides the data into 5 parts and take 1 part as test data and other as training data
+	so, 150 divided into 30,30,30,30,30 one part of 30 taken as test data, other 120 taken as training data.
+	30 , 120 divided.
+
+1) Discretize the data by rounding each feature value to its closest integer (1 Marks)
+
+	Simply convert the data into round value, after reading the data we can convert.
+	reading the data at the line (165) in code
+	and converting using the functions discretize_str_float and discretize_str_int.
+	
+	Implementing of these funcitons are at (36 - 50 line) in code.
+
+	Accuracy with Discretization of data: 92.66666667%
+
+2) Employ Naive Bayes Classifier and thus give your observation and results (3 Marks).
+
+	
+	The fundamental Naive Bayes assumption is that each feature makes an:
+		--> independent and equal
+	classes are independent.
+	and coded the logic explained in the class.
+
+3) If the data is used without discretization, then what is the performance of the Naive Bayes classifier. Give your observation, result (2 Marks)
+
+	Without Discretization:
+		use the data as it is (do not round off)
+	(180- 192 line) in code.
+
+	Accuracy without Discretization : 95.33333333%.
+
+	Observation:
+  		when we are discretizing the data, Accuracy is decreasing.
+		With out discretizing Accuracy is more. 
+
+4) Use the OCR data given in the previous assignment and employ the Naive Bayes Classifier (4 Marks)
+
+	(194 - 204 line) in code.
+	Accuracy For OCR Data : 71.80180180%
+		
+
+
+Observation and Result:
+
+ Discretization: 92.66666667%
+ without Discretization : 95.33333333%
+
+ when we use discretization accuracy decreases compared to without discretizing.
+ so, if we use the data  without Discretization one can get more accuracy.
+
+RESULT:
+Final Output:
+Note : since i'm using random values we get random accuracy when we run the code at different time.
+	so, run 5-6 times and we can verify it.
+--------------------------------------------------------------------------------
+For Iris Data Set:
+Accuracy with Discretization of data: 92.66666667%
+Accuracy without Discretization : 95.33333333%
+
+--------------------------------------------------------------------------------
+
+For OCR data set: 
+Accuracy For OCR Data : 71.80180180%
+
+--------------------------------------------------------------------------------
+
+
+
+
+
+
+ 

@@ -1,0 +1,51 @@
+ML Lab-2:
+
+Submitted one file (I did for K-Fold Cross Validation and K-NNC):
+	so by changing K value in the code at the line(136) we can get:
+		K = 5 --> (5-Fold cross validation);
+		In Line 139 I took for 10 K-NNC
+
+Dividing the data into training data and the test data
+I used a split percentage so that it will split(line 128) according to the percent we give.
+
+1) Implement 5-Fold Cross Validation (5M): 
+ 	In code at line (136)
+ 	I initialized k value and we can change it to any K value for checking
+ 	So, if we change k value and run the program we can get the accuracy percantage
+ 	and the data is also divided into 120 and 30 as the  percentage (0.8) ie..(120/150).
+
+2) Perform 5-Fold cross validation on KNN Classifier for IRIS Dataset (2M):
+ 	Since I did for a standard K by changing value of K and running the code can give us the accuracy and 
+	percentage
+	K = 5
+
+3) Find out the best K value for the KNN Classifier using step-2. (2M):
+ 	I Run the 5-Fold cross validation for 10 value on KNN (1-10) and find the maximum value of accuracy for which value of K it is 	giving(many time i got K=3)
+	This part is present in the line(159-166)
+
+4) Report the validation accuracy and test accuracy of the classifier.  {Note, validation accuracy will have standard deviation, report that too}
+ Since We are spitting randomly we get random accuracy(some time's same).
+
+For one sample:
+validation accuracy: (for 10 value of KNN algo)
+93.33333333333334
+90.0
+100.0
+95.0
+95.0
+96.66666666666666
+100.0
+93.33333333333333
+95.0
+93.33333333333334
+
+Test accuracy of the classifier(combined accuracy) : 95.167%
+Mean Accuracy: 95.167%
+Variance : 8.583%
+Standard Deviation : 2.930%
+The Best Value of K is 3
+
+
+
+
+ 

@@ -1,0 +1,62 @@
+ML Lab-8:
+
+I code all the main logic in regression_bias_variance_analysis function.
+
+0. We assume that the correct relationship between the dependent and independent variables is t = 4+x1+3x2
+
+	While generating the data for training and testing i used this function.
+	Coded in the Line(25-33):
+	dependent variable --> t.
+	Independent Varaible --> x1 and x2.
+
+	Used Uniform Distribution for generating x1 and x2 using np.random.uniform
+	Function is present at the line (19-21).
+
+
+1. Generate data where  x1 is uniformly distributed in (1,10); and x2 is also uniformly distributed in (2, 5).
+
+	x1 is generated using random uniform function and taken range from 1 to 10.
+	and generated random values.
+
+	x2 is generated using random uniform function and taken range from 2 to 5.
+	and generated random values.		
+
+2. Add noise epsilon to the target where epsilon is drawn from the normal distribution with 0 mean and 0.25 variance.
+
+	Added the Noice value while generating the independent varaible for both train and test data.
+	Using np.random.normal with mean as 0 and variance as 0.25.
+
+0,1,2 is implemented in the Line (7,33)
+Just generating using numpy and following the given conditions.
+
+3. Generate 10 different training sets each of size n. Training set size n should be varied from 100 to 1000 examples (you can say n is 100, 200, ..., 1000) and do the linear regression.
+
+	10 Different Training sets are generated for each of size n as implemented in 6th Lab.
+  	100,200 .. ,1000 are taken from 100 to 1000 with 100 gap.
+	Logic at (59-60 in Code)
+	and the Linear Regression Logic is Coded using formuals and some numpy functions.
+
+4. Generate test set of size 100 do the bias variance analysis. Note that this test set is fixed.
+
+	Test set is fixed, stored is varaiable using n = 100.
+	In code (99 Line).
+
+
+
+
+Result and Observation:
+
+Note:
+Since used the radom variable for uniform and normal distribution by running code for 5-6 times i got this as the best result.
+
+Mean : [0.85618742, 0.86382069, 0.8533333, 0.85181875, 0.85338553, 0.85616618, 0.85300044, 0.85154459, 0.85178798, 0.85364668] .
+Varaiance : [19.0392005, 18.37389358, 17.96853113, 17.56646356, 17.0952315, 16.55376785, 16.22373737, 15.85712294, 15.49254466, 15.06405056].
+
+
+Bias is varying very slowly and with very less value by changing the value for n.
+Varaince is decreasing as the value of n is increasing.
+Due to adding the noise epsilon Varaince Value is high.
+
+
+
+

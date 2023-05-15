@@ -1,0 +1,14 @@
+<FSD>
+    <Student>
+        <Name>Rahul</Name>
+        <RollNo>FSD212</RollNo>
+        <Age>20</Age>
+        <CGPA>9.2</CGPA>
+    </Student>
+    <Student>
+        <Name>Hari</Name>
+        <RollNo>FSD213</RollNo>
+        <Age>20</Age>
+        <CGPA>9.6</CGPA>
+    </Student>
+</FSD>

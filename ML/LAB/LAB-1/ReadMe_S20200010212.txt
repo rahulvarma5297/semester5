@@ -1,0 +1,29 @@
+ML Lab-1:
+
+Submitted one file (I did for K NNC):
+	so by changing K value in the code at the line(72) we can get:
+		K = 1 and K = 3;
+Dividing the data into training data and the test data
+I used a split percentage so that it will split(line 64) according to the percent we give.
+
+1) Implement 1-NNC:
+ In code at line (71)
+ I initialized k value and we can change it to any K value for checking
+ So, if we change k value and 1 and run the program we can get the accuracy percantage
+ and the data is also divided into 120 and 30 as the  percentage (0.8) ie..(120/150).
+
+2) Implement 3-NNC:
+ Since i did for a standard K by changin value of K and running the code can give us the accuracy and         percentage
+K = 3
+
+3) Divide the data into the training data and the test data
+ In code at line (64)
+ I used a split = 0.8 that divides the data into 120 : 30 by calling load_data method.
+
+4) Now We can calculate accuracy of the 1-NNC, and k-NNC over the test data.
+ Since We are spitting randomly we get random accuracy
+
+
+Accuracy of 1-NNC --> nearly i'm getting between (92-95)% something like that.
+Accuracy of 3-NNC --> nearly i'm getting between (91-97)% something like that.
+ 

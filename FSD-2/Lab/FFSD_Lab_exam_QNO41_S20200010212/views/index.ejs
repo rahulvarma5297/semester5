@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Validation (S20200010212)</title>
+ 
+
+ <script>
+   function check() {
+    let phone = document.getElementById("phone").value;
+    let email = document.getElementById("email").value;
+    let roll = document.getElementById("roll").value;
+
+    if(!email.includes('@') || !email.includes('.')){
+        alert('invalid email');
+        return false;
+    }
+    else if (phone.length != 10) {
+        alert("Phone number is not of 10 Digits");
+        return false;
+    } else if (!roll.startsWith("S2020")) {
+        alert("Please enter Roll number starting with S2020");
+        return false;
+    } else {
+        alert("Registration Successfull");
+        return true;
+    }
+}
+ </script>
+
+</head>
+
+<body>
+  <h1>Form Validation: </h1>
+    <form name="studentinfo" action="/tabledata" onsubmit="return check()" method="post">
+        <label for="text">projectject Name</label>
+        <input type="text" id="project" name="project" required>
+        <br>
+        <label for="text">groupnum No</label>
+        <input type="text" id="groupnum" name="groupnum" required>
+        <br>
+        <label for="text">Email</label>
+        <input type="text" id="email" name="email" required>
+        <br>
+        <label for="text">Phone Number</label>
+        <input type="text" id="phone" name="phone" required>
+        <br>
+        <label for="text">Roll Number</label>
+        <input type="text" id="roll" name="roll" required>
+        <br>
+        <input type="submit" value="submit">
+
+    </form>
+    <h1>Data is this Page : <a href="/tabledata">Click Here</a></h1>
+
+  </section>
+  
+
+
+
+</body>
+
+</html>
